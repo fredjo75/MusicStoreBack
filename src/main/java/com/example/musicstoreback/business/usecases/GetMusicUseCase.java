@@ -1,4 +1,4 @@
-package com.example.musicstoreback.usecases;
+package com.example.musicstoreback.business.usecases;
 
 import com.example.musicstoreback.domain.entities.Music;
 import com.example.musicstoreback.frameworks.IMusicDao;

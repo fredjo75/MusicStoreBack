@@ -70,6 +70,11 @@
             <artifactId>tomcat-embed-websocket</artifactId>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>3.1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -78,32 +83,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <!--<plugin>
-                <groupId>org.flywaydb</groupId>
-                <artifactId>flyway-maven-plugin</artifactId>
-                <version>9.8.1</version>
-                <executions>
-                    <execution>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>migrate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <driver>com.mysql.cj.jdbc.Driver</driver>
-                    <url>jdbc:mysql://localhost:3306/my_database</url>
-                    <user>my_user</user>
-                    <password>my_user_secret_password</password>
-                    <baselineOnMigrate>true</baselineOnMigrate>
-                    <schemas>public</schemas>
-                    <locations>
-                        <location>
-                            filesystem:src/main/resources/db/migration
-                        </location>
-                    </locations>
-                </configuration>
-            </plugin>-->
         </plugins>
     </build>
     <profiles>
